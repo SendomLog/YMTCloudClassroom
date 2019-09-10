@@ -1,0 +1,31 @@
+{
+    "domain": {
+        "Server1" : {
+            "Debug": "http://sit04-api.yimifudao.com",
+            "Release": "https://yimifudao.com",
+        },
+        
+        "Server2": {
+            "Debug": "http://sit04-api.yimifudao.com",
+            "Release": "https://yimifudao.com",
+        },
+        "Local": {
+            "Debug": "http://10.0.40.130:8007",
+            "Release": "http://10.0.40.130:8007",
+        }
+    },
+    "path": {
+        "user_login": {
+            "domain":"Server1",
+            "path":"/v2.4/user/login",
+            "method": "POST",
+            "requestSerializer": "application/x-www-form-urlencoded; charset=UTF-8"
+        },
+        "user_register": {
+            "domain":"Local",
+            "path":"/user/userRegister",
+            "method": "POST",
+            "requestSerializer": "application/json"
+        }
+    }
+}
