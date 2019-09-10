@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YMTCloudClassroom'
-  s.version          = '0.1.8.16'
+  s.version          = '0.1.8.17'
   s.summary          = 'CloudClassroom 2.0 SDK'
 
 # This description is used to generate tags and improve search results.
@@ -47,8 +47,10 @@ Pod::Spec.new do |s|
   s.dependency 'TXLiteAVSDK_TRTC', '6.3.7088'
   
   s.user_target_xcconfig = { 
-    'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)'
+    'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)',
+    'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/YMTCloudClassroom/YMTCloudClassroom/YMTCloudClassroom.framework/Headers/'
   }
+  
   s.pod_target_xcconfig = {
       "HEADER_SEARCH_PATHS" => "${PODS_ROOT}",
   }
