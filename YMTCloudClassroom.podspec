@@ -49,11 +49,8 @@ Pod::Spec.new do |s|
   
   s.user_target_xcconfig = { 
     'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)',
-    'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/YMTCloudClassroom/YMTCloudClassroom/YMTCloudClassroom.framework/Headers/'
-  }
-  
-  s.pod_target_xcconfig = {
-      "HEADER_SEARCH_PATHS" => "${PODS_ROOT}",
+    'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/YMTCloudClassroom/YMTCloudClassroom/YMTCloudClassroom.framework/Headers/',
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
   }
 
 end
