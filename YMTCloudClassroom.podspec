@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YMTCloudClassroom'
-  s.version          = '0.1.8.17'
+  s.version          = '0.1.8.18'
   s.summary          = 'CloudClassroom 2.0 SDK'
 
 # This description is used to generate tags and improve search results.
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   s.dependency 'AFNetworking'
   s.dependency 'MJExtension'
   s.dependency 'Masonry'
-  s.dependency 'AgoraRtcEngine_iOS','2.3.1'
+  s.dependency 'AgoraRtcEngine_iOS','~> 2.3.0'
   s.dependency 'TXLiteAVSDK_TRTC', '6.3.7088'
   
   s.user_target_xcconfig = { 
