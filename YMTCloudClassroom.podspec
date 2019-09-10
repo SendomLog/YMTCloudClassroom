@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YMTCloudClassroom'
-  s.version          = '0.1.8.15'
+  s.version          = '0.1.8.16'
   s.summary          = 'CloudClassroom 2.0 SDK'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,8 @@ Pod::Spec.new do |s|
   
   s.resources = 'YMTCloudClassroom/Assets/**/*'
   s.vendored_frameworks = "YMTCloudClassroom/Framework/YMTCloudClassroom.framework"
-  s.public_header_files = 'YMTCloudClassroom/Framework/**/*.h'
-  
+  s.public_header_files = 'YMTCloudClassroom/Framework/YMTCloudClassroom.framework/**/*.h'
+
   # s.resource_bundles = {
   #   'YMTCloudClassroom' => ['YMTCloudClassroom/Assets/*.png']
   # }
