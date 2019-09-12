@@ -13,7 +13,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YMTRedPackageView : UIView
 
-- (instancetype)initWithBeginTimer:(NSTimeInterval)beginTimer redPackageRainTimer:(NSTimeInterval)rainTimer;
+/*
+ param 里面是抢红包需要的
+ {
+ "token": "xxxxx",
+ "version": "v1",
+ "lid": "12345",
+ "uid": "678910",
+ "redPacketNum": 1,// 红包id
+ "currentPacketNum":2,// 当前红包id
+ "groupId":1
+ }
+ */
+
+- (instancetype)initWithBeginTimer:(NSTimeInterval)beginTimer redPackageRainTimer:(NSTimeInterval)rainTimer param:(NSDictionary *)param;
 
 - (void)hiddenRedPackage;
 

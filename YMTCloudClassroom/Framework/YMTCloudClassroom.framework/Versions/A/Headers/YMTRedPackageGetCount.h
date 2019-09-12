@@ -16,7 +16,7 @@ typedef void(^YMTRedPackageGetCountHandle)(int count);
 /// 获取红包策略回调
 @property (nonatomic, copy, readwrite) YMTRedPackageGetCountHandle getCountHandle;
 
-- (void)getRedPackageCount;
+- (void)getRedPackageCount:(NSDictionary *)content;
 
 @end
 

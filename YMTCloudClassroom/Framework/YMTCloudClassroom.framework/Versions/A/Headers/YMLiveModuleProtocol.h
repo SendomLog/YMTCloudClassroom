@@ -90,6 +90,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)leaveRoom:(YMLiveChannel)channel;
 
+/**
+ 启用音量大小提示
+ 开启后会在 [YMLiveDelegate onUserVoiceVolume:totalVolume:channel:] 回调中获取到 SDK 对音量大小值的评估。
+ 注意：并不是所有通道设置这个都会有回调，具体看各个通道的情况。
+ 
+ @param interval     报告间隔单位为 ms，最小间隔20ms，如果小于等于0则会关闭回调，建议设置为大于200ms
+ @param smoothLevel  灵敏度，[0,10]，数字越大，波动越灵敏，建议设置值3
+ */
+- (void)enableAudioVolumeEvaluation:(NSUInteger)interval smooth:(NSInteger)smoothLevel;
+
 #pragma mark -- 音频控制
 /**
  是否开启音频模块

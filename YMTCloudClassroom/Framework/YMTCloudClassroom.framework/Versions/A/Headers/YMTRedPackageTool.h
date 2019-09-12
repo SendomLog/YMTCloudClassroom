@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YMTRedPackageTool : NSObject
 
-+ (void)showPackageWithCountDown:(int)interval rainInterval:(NSTimeInterval)rainInterval URL:(NSString *)url result:(void(^)(void))reault autoRemove:(BOOL)autoRemove;
++ (void)showPackageWithCountDown:(int)interval rainInterval:(NSTimeInterval)rainInterval URL:(NSString *)url param:(NSDictionary *)param result:(void(^)(void))reault autoRemove:(BOOL)autoRemove;
 
 + (void)showPackageRankViewWith:(NSString *)url param:(NSDictionary *)dic;
 
