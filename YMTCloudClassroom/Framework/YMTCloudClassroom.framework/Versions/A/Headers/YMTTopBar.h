@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^YMTTopBarExitHandle)(void);
+
 #define ISIPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? 1 : 0
 
 @protocol  YMTTopBarDelegate <NSObject>
@@ -21,7 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface YMTTopBar : UIView
 
 @property (nonatomic, weak) id<YMTTopBarDelegate> delegate;
-
+    
+/// exit handle
+@property (nonatomic, copy, readwrite) YMTTopBarExitHandle exitHandle;
+    
 - (void)setupWithTitle:(NSString *)title state:(NSString *)state cupNum:(NSString *)cupNum score:(NSString *)score;
 @end
 
