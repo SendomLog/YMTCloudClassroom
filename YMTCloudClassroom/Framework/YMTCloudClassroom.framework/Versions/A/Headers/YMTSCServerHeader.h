@@ -37,7 +37,9 @@ typedef NS_ENUM(NSInteger, YMTSCCommandConvertType) {
     YMTSCCommandConvertTypePlayAnimation,   // 播放当前页面的动画
     YMTSCCommandConvertTypeRedPackageRain,   // 开始抢红包
     YMTSCCommandConvertTypeRedPackageRainFinsh,   // 抢红包结束
-    YMTSCCommandConvertTypeUpDown,   // 上下台
+    YMTSCCommandConvertTypeUpDown,           // 上下台
+    YMTSCCommandConvertTypeQuestion,         // 答题器
+    YMTSCCommandConvertTypeAnswerQuestion,   //发送答案
 };
 
 #endif /* GPLSCServerHeader_h */
