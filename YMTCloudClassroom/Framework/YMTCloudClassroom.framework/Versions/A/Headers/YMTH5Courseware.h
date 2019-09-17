@@ -12,8 +12,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /** H5课件组件 */
-@interface YMTH5Courseware : NSObject<YMCoursewareProtocol>
-@property (nonatomic, weak) id<YMCoursewareCallback> callback;
+@interface YMTH5Courseware : NSObject <YMTCoursewareProtocol>
+@property(nonatomic, weak) id<YMTCoursewareCallback> callback;
 @end
 
 NS_ASSUME_NONNULL_END

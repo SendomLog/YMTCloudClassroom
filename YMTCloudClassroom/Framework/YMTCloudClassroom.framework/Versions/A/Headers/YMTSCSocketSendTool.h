@@ -15,13 +15,12 @@ typedef void (^GPLSCSocketDataCallBack)(BOOL isFinished, id tool, YMTSCSendMsgEn
 
 typedef void (^GPLSCSocketSendDataCallBack)(id tool, YMTSCSendMsgEntity *data);
 
-
 @interface YMTSCSocketSendTool : NSObject
 
-@property (nonatomic, assign, readonly) NSUInteger tag;
-@property (nonatomic, assign, readonly) NSInteger nowTag;//当前tag编号
-@property (nonatomic, assign, readonly) BOOL isSending;
-@property (nonatomic, assign, readonly) BOOL hasLocalData;
+@property(nonatomic, assign, readonly) NSUInteger tag;
+@property(nonatomic, assign, readonly) NSInteger nowTag; //当前tag编号
+@property(nonatomic, assign, readonly) BOOL isSending;
+@property(nonatomic, assign, readonly) BOOL hasLocalData;
 
 - (void)addSocketSendCallBack:(GPLSCSocketDataCallBack)callBack realSendCallBack:(GPLSCSocketSendDataCallBack)realSendCallBack;
 /**

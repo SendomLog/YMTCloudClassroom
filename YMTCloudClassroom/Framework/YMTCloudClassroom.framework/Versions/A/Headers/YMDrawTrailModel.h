@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 线宽类型 0 1 2 代表小 中 大
 @property (copy, nonatomic) NSString *widthType;
 //color为空代表橡皮
-@property (strong, nonatomic) UIColor *color;
+@property (strong, nonatomic, nullable) UIColor *color;
 @property (strong, nonatomic) NSMutableArray<NSValue*> *pointArray;
 @property (copy, nonatomic) NSString *offsetY;
 

@@ -32,9 +32,8 @@ typedef NS_ENUM(NSInteger,GPLSCServerConnectResult) {
  @param isRealTime 实时/同步 消息
  */
 - (void)YMTIMModule:(YMTIMModule *)serverManager
-                   context:(YMTSCSendMsgEntity *)context
-                isRealTime:(BOOL)isRealTime;
-
+            context:(YMTSCSendMsgEntity *)context
+         isRealTime:(BOOL)isRealTime;
 
 /**
  发送的消息服务端已收到
@@ -43,8 +42,7 @@ typedef NS_ENUM(NSInteger,GPLSCServerConnectResult) {
  @param context 服务端收到的消息
  */
 - (void)YMTIMModule:(YMTIMModule *)serverManager
-           realSendContext:(YMTSCSendMsgEntity *)context;
-
+    realSendContext:(YMTSCSendMsgEntity *)context;
 
 /**
  同步回调
@@ -53,7 +51,7 @@ typedef NS_ENUM(NSInteger,GPLSCServerConnectResult) {
  @param isSyncDone 是否同步完成
  */
 - (void)YMTIMModule:(YMTIMModule *)serverManager
-                isSyncDone:(BOOL)isSyncDone;
+         isSyncDone:(BOOL)isSyncDone;
 
 @optional
 
@@ -65,10 +63,8 @@ typedef NS_ENUM(NSInteger,GPLSCServerConnectResult) {
  @param connectResult 连接状态
  */
 - (void)YMTIMModule:(YMTIMModule *)serverManager
-              connectModel:(YMTSCServerIpModel *)connectModel
-             connectResult:(GPLSCServerConnectResult)connectResult;
-
-
+       connectModel:(YMTSCServerIpModel *)connectModel
+      connectResult:(GPLSCServerConnectResult)connectResult;
 
 /**
  重连IP上报
@@ -77,35 +73,34 @@ typedef NS_ENUM(NSInteger,GPLSCServerConnectResult) {
  @param connectModel 重连IP
  */
 - (void)YMTIMModule:(YMTIMModule *)serverManager
-              reportReconnectIp:(YMTSCServerIpModel *)connectModel;
+    reportReconnectIp:(YMTSCServerIpModel *)connectModel;
 
 @end
 
+typedef void (^YMTIMModuleCallBlock)();
 
-typedef void(^YMTIMModuleCallBlock)();
-
-typedef NSArray <YMTSCServerIpModel *> * (^GPLSCServerIPsConfigBlock)();
+typedef NSArray<YMTSCServerIpModel *> * (^GPLSCServerIPsConfigBlock)();
 
 @interface YMTIMModule : NSObject
 
-@property (nonatomic, weak) id<YMTIMModuleDelegate> delegate;
+@property(nonatomic, weak) id<YMTIMModuleDelegate> delegate;
 
 - (instancetype)initWithLessonId:(NSString *)lessonId
                           mainIP:(YMTSCServerIpModel *)mainIP
-                          dnsIPs:(NSArray <YMTSCServerIpModel *> *)dnsIPs
-                            token:(NSString *)token;
+                          dnsIPs:(NSArray<YMTSCServerIpModel *> *)dnsIPs
+                           token:(NSString *)token;
 
 - (instancetype)initWithLessonId:(NSString *)lessonId
                              uid:(NSString *)uid
                           mainIP:(YMTSCServerIpModel *)mainIP
-                          dnsIPs:(NSArray <YMTSCServerIpModel *> *)dnsIPs
+                          dnsIPs:(NSArray<YMTSCServerIpModel *> *)dnsIPs
                            token:(NSString *)token;
 
 /**
  同步消息
  */
-- (void)asyncSeverDataWithComplete:(void (^)(BOOL isSuccess))completionBlock;;
-
+- (void)asyncSeverDataWithComplete:(void (^)(BOOL isSuccess))completionBlock;
+;
 
 /**
  重置教室所有工具及设置

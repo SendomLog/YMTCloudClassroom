@@ -12,8 +12,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /** 课件组件 */
-@interface YMTCourseware : NSObject<YMCoursewareProtocol>
-@property (nonatomic, weak) id<YMCoursewareCallback> callback;
+@interface YMTCourseware : NSObject <YMTCoursewareProtocol>
+@property(nonatomic, weak) id<YMTCoursewareCallback> callback;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -28,7 +28,8 @@ typedef NS_ENUM(NSInteger,YMDrawToolType) {
 typedef NS_ENUM(NSInteger,WhiteBoardCursorViewType) {
     WhiteBoardCursorViewType_None = 0,
     WhiteBoardCursorViewType_OneToOne,
-    WhiteBoardCursorViewType_SmallClass
+    WhiteBoardCursorViewType_SmallClass,
+    WhiteBoardCursorViewType_BigClass
 };
 
 

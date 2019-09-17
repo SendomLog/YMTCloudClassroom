@@ -1,5 +1,5 @@
 //
-//  YMCoursewareCallback.h
+//  YMTCoursewareCallback.h
 //  YiMiLib
 //
 //  Created by Caffrey on 2019/5/21.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol YMCoursewareCallback <NSObject>
+@protocol YMTCoursewareCallback <NSObject>
 
 @end
 

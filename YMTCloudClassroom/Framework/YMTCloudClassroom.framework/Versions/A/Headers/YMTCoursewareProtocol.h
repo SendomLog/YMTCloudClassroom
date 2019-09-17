@@ -1,5 +1,5 @@
 //
-//  YMCoursewareProtocol.h
+//  YMTCoursewareProtocol.h
 //  YiMiLib
 //
 //  Created by Caffrey on 2019/5/21.
@@ -14,12 +14,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
 /**
  课件系统的接口设计，详情请看Wiki：
  http://192.168.3.24:22233/pages/viewpage.action?pageId=5281657#id-%E4%BA%91%E6%95%99%E5%AE%A4%E6%8A%BD%E7%A6%BB%E6%A8%A1%E5%9D%97%E6%96%B9%E6%A1%88-2%EF%BC%89%E8%AF%BE%E4%BB%B6%E6%A8%A1%E5%9D%97
  */
-@protocol YMCoursewareProtocol <NSObject>
+@protocol YMTCoursewareProtocol <NSObject>
 
 @required
 /**
@@ -33,7 +32,6 @@ NS_ASSUME_NONNULL_BEGIN
  课件加空白页
  */
 - (void)addPage;
-
 
 /**
  课件加图片页
@@ -108,7 +106,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  回调
  */
-@property (nonatomic, weak) id<YMCoursewareCallback> callback;
+@property(nonatomic, weak) id<YMTCoursewareCallback> callback;
 
 @end
 
