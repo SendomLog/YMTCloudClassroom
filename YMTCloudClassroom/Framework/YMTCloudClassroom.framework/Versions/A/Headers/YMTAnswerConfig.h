@@ -15,6 +15,9 @@ typedef NS_ENUM(NSUInteger, YMAnswerType) {
     YMAnswerTypeCommit = 3
 };
 
-typedef void(^YMTAnswerResult)(NSString * _Nullable itemId, YMAnswerType type, NSString * _Nullable stuAnswer, NSInteger answerTime);
+typedef void(^YMTAnswerResult)(NSString * _Nullable itemId,NSString * _Nullable itemAnswer, YMAnswerType type, NSString * _Nullable stuAnswer, NSInteger answerTime);
+
+typedef void(^YMTStopAnswerResult)(NSString * _Nullable itemAnswer, NSString * _Nullable stuAnswer, NSInteger answerTime);
+
 
 #endif /* YMTAnswerConfig_h */
