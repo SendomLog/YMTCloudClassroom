@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)showWithType:(YMToastType)type message:(NSString *)message duration:(NSTimeInterval)duration inView:(UIView*)superView;
 
++ (void)showEndClassAlert:(void(^)(void))closeBlock;
 
 @end
 
