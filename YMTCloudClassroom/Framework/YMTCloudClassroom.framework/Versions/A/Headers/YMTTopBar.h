@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, YMClassState) {
+    YMClassStateFreedom,            //自由模式（未开始上课）
+    YMClassStateStarted,            //开始上课（上课中）
+    YMClassStateInterruption,       //课程中断（老师退出）
+    YMClassStateEnd,                //课程结束
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^YMTTopBarExitHandle)(void);
@@ -27,7 +34,7 @@ typedef void(^YMTTopBarExitHandle)(void);
 /// exit handle
 @property (nonatomic, copy, readwrite) YMTTopBarExitHandle exitHandle;
     
-- (void)setupWithTitle:(NSString *)title state:(NSString *)state cupNum:(NSString *)cupNum score:(NSString *)score;
+- (void)setupWithTitle:(NSString *)title state:(YMClassState)state cupNum:(NSString *)cupNum score:(NSString *)score;
 @end
 
 NS_ASSUME_NONNULL_END

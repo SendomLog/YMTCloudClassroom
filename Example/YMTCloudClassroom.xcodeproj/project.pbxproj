@@ -527,6 +527,14 @@
 				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/YMTDeviceSettingView.xib",
 				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/YMTLiveChildView.xib",
 				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/YMTTimeMeterView.xib",
+				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/ymt_room_status_class_end@2x.png",
+				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/ymt_room_status_class_end@3x.png",
+				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/ymt_room_status_in_class@2x.png",
+				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/ymt_room_status_in_class@3x.png",
+				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/ymt_room_status_tea_leave@2x.png",
+				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/ymt_room_status_tea_leave@3x.png",
+				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/ymt_room_status_wait_class@2x.png",
+				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/ymt_room_status_wait_class@3x.png",
 				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/YMLive.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -726,6 +734,14 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YMTDeviceSettingView.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YMTLiveChildView.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YMTTimeMeterView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ymt_room_status_class_end@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ymt_room_status_class_end@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ymt_room_status_in_class@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ymt_room_status_in_class@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ymt_room_status_tea_leave@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ymt_room_status_tea_leave@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ymt_room_status_wait_class@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ymt_room_status_wait_class@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YMLive.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
