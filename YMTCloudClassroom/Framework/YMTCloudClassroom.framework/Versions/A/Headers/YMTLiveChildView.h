@@ -15,8 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UIView *)getCanvasView;
 
--  (UIView *)getInfoView;
-
 - (void)setRoleType:(YMLiveRoleType)roleType;
 
 - (void)setVolume:(CGFloat)volume;

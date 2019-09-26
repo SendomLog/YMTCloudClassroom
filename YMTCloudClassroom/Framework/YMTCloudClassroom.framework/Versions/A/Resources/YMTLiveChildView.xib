@@ -36,67 +36,9 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="backGroundImageView" destination="PiP-Gr-pTH" id="8lq-Td-lSe"/>
-                <outlet property="bottomView" destination="SsF-rI-hI5" id="c0g-Zk-6y3"/>
                 <outlet property="frameView" destination="E0a-5z-SgR" id="rRX-3A-X0F"/>
-                <outlet property="micImageView" destination="580-ln-Siq" id="AGp-QH-Zbf"/>
-                <outlet property="nameLabel" destination="sSn-ND-zVL" id="qlc-1j-Scc"/>
-                <outlet property="netWorkImageView" destination="zkC-4d-MYD" id="gUG-8X-gYi"/>
             </connections>
             <point key="canvasLocation" x="82.608695652173921" y="26.785714285714285"/>
         </view>
-        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SsF-rI-hI5" userLabel="bottomView">
-            <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王学生" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSn-ND-zVL" userLabel="nameLabel">
-                    <rect key="frame" x="6" y="4" width="124" height="26"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="26" id="8Dm-UZ-cnb"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w1" translatesAutoresizingMaskIntoConstraints="NO" id="zkC-4d-MYD" userLabel="teacherRemarkImageview">
-                    <rect key="frame" x="135" y="5" width="20" height="20"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="20" id="40H-X7-ObH"/>
-                        <constraint firstAttribute="width" constant="20" id="zel-gI-aZt"/>
-                    </constraints>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mk1" translatesAutoresizingMaskIntoConstraints="NO" id="580-ln-Siq" userLabel="teacherRemarkImageview">
-                    <rect key="frame" x="181" y="6" width="13" height="18"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="13" id="7ns-M5-Vfp"/>
-                        <constraint firstAttribute="height" constant="18" id="kye-Rd-dqg"/>
-                    </constraints>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mk1" translatesAutoresizingMaskIntoConstraints="NO" id="s9P-QJ-PfW" userLabel="teacherRemarkImageview">
-                    <rect key="frame" x="161" y="5" width="20" height="20"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="20" id="Bk6-ly-FnK"/>
-                        <constraint firstAttribute="height" constant="20" id="wfp-GQ-tey"/>
-                    </constraints>
-                </imageView>
-            </subviews>
-            <color key="backgroundColor" red="0.27058823529999998" green="0.2784313725" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="sSn-ND-zVL" secondAttribute="bottom" id="MUC-Qz-Vqs"/>
-                <constraint firstItem="580-ln-Siq" firstAttribute="centerY" secondItem="SsF-rI-hI5" secondAttribute="centerY" id="OhT-oB-7jd"/>
-                <constraint firstItem="zkC-4d-MYD" firstAttribute="leading" secondItem="sSn-ND-zVL" secondAttribute="trailing" constant="5" id="QgR-lk-PXN"/>
-                <constraint firstItem="zkC-4d-MYD" firstAttribute="centerY" secondItem="SsF-rI-hI5" secondAttribute="centerY" id="TmO-fc-keX"/>
-                <constraint firstItem="s9P-QJ-PfW" firstAttribute="leading" secondItem="zkC-4d-MYD" secondAttribute="trailing" constant="6" id="UTm-Vw-8gj"/>
-                <constraint firstItem="s9P-QJ-PfW" firstAttribute="centerY" secondItem="SsF-rI-hI5" secondAttribute="centerY" id="Uud-Va-TgP"/>
-                <constraint firstItem="580-ln-Siq" firstAttribute="leading" secondItem="s9P-QJ-PfW" secondAttribute="trailing" id="VFe-oK-jNI"/>
-                <constraint firstItem="sSn-ND-zVL" firstAttribute="leading" secondItem="SsF-rI-hI5" secondAttribute="leading" constant="6" id="jVL-MQ-RT3"/>
-                <constraint firstAttribute="trailing" secondItem="580-ln-Siq" secondAttribute="trailing" constant="6" id="qUS-Z1-HmR"/>
-            </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="74" y="200"/>
-        </view>
     </objects>
-    <resources>
-        <image name="mk1" width="20" height="20"/>
-        <image name="w1" width="20" height="20"/>
-    </resources>
 </document>
