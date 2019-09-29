@@ -134,7 +134,7 @@
                 <outlet property="btnStartTest" destination="7KC-ox-EZ9" id="dHe-9t-LbN"/>
                 <outlet property="btnWifi" destination="5Z1-uu-gTb" id="2sF-ve-ruo"/>
             </connections>
-            <point key="canvasLocation" x="221.73913043478262" y="12.723214285714285"/>
+            <point key="canvasLocation" x="190" y="21"/>
         </view>
     </objects>
     <resources>
