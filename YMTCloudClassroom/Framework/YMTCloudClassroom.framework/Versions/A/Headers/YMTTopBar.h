@@ -35,6 +35,9 @@ typedef void(^YMTTopBarExitHandle)(void);
 @property (nonatomic, copy, readwrite) YMTTopBarExitHandle exitHandle;
     
 - (void)setupWithTitle:(NSString *)title state:(YMClassState)state cupNum:(NSString *)cupNum score:(NSString *)score;
+
+- (void)setupPingIP:(NSString *)pingIP;
+
 @end
 
 NS_ASSUME_NONNULL_END
