@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YMTCloudClassroom'
-  s.version          = '0.1.8.34'
+  s.version          = '0.1.9'
   s.summary          = 'CloudClassroom 2.0 SDK'
 
 # This description is used to generate tags and improve search results.
@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
 
   s.description      = "溢米辅导 云教师 2.0 SDK"
 
-  s.homepage         = 'https://github.com/SendomLog/YMTCloudClassroom'
+  s.homepage         = 'https://github.com/yimifudaoTech/YMTCloudClassroom.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'zhangqian' => 'qian.zhang@yimifudao.com' }
-  s.source           = { :git => 'https://github.com/SendomLog/YMTCloudClassroom.git', :tag => s.version.to_s }
+  s.author           = { 'kfb' => 'kfb@yimifudao.com' }
+  s.source           = { :git => 'https://github.com/yimifudaoTech/YMTCloudClassroom.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
