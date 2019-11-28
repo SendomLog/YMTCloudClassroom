@@ -8,7 +8,7 @@ platform :ios, '9.0'
 target 'YMTCloudClassroom_Example' do
   pod 'YMTCloudClassroom', :path => '../'
 
-  pod 'QMUIKit'
+  pod 'QMUIKit','3.2.1'
   pod 'IQKeyboardManager'
   pod 'AFNetworking'
   pod 'WoodPeckeriOS', :configurations => ['Debug']
@@ -16,7 +16,7 @@ target 'YMTCloudClassroom_Example' do
   pod 'coobjc'
   pod 'PINCache'
   pod 'YYModel'
-  pod 'SDWebImage'
+  pod 'SDWebImage', '4.0.0'
   pod 'Masonry'
   pod 'YMFlow'
   

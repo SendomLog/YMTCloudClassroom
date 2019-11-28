@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   
   s.resources = 'YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/**'
   s.vendored_frameworks = 'YMTCloudClassroom/Framework/*.framework'
-  s.public_header_files = 'YMTCloudClassroom/YMTCloudClassroom.framework/Headers/*.h, YMTCloudClassroom/YMQOSLib.framework/Headers/*.h'
+  s.public_header_files = 'YMTCloudClassroom/YMTCloudClassroom.framework/Headers/*.h', 'YMTCloudClassroom/YMQOSLib.framework/Headers/*.h'
 
   s.static_framework = true
   # s.resource_bundles = {
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   # }
 
   s.library = 'c++'
-  s.frameworks = 'WebKit'
+  s.frameworks = 'WebKit', 'AdSupport'
 
   s.dependency 'YMFlow'
   s.dependency 'AFNetworking'
@@ -46,6 +46,7 @@ Pod::Spec.new do |s|
   s.dependency 'Masonry'
   s.dependency 'AgoraRtcEngine_iOS','~> 2.3.0'
   s.dependency 'TXLiteAVSDK_TRTC', '6.3.7088'
+  s.dependency 'CocoaAsyncSocket'
   
   s.user_target_xcconfig = { 
     'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)',
