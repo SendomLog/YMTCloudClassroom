@@ -14,12 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 static NSString *kJSFuncWebGetToken = @"webGetToken";
 static NSString *kJSFuncWebLoadFinshed = @"webLoadFinished";
+static NSString *kJSFuncHaveNewMessage = @"haveNewMessage";
 
 @protocol YMTChatMessageHandlerDelegate <NSObject>
 
 - (void)webGetToken:(_Nullable id)info;
 
 - (void)webLoadFinished:(_Nullable id)info;
+
+- (void)haveNewMessage;
 
 @end
 

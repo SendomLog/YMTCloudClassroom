@@ -29,7 +29,7 @@
  
  @param data 数据原型
  */
-- (void)sendData:(NSString *)data;
+- (void)sendData:(NSString *)data callBack:(SocketSendDataResultCallBack)callBack;
 
 /**
  断开连接

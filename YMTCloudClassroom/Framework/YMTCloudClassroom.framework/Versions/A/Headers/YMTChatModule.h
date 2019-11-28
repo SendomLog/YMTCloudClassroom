@@ -11,7 +11,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol YMTChatMoudleDelegate <NSObject>
+
+- (void)receiveNewMessage;
+
+@end
+
 @interface YMTChatModule : NSObject <YMTChatProtocol>
+
+@property (nonatomic,weak)id <YMTChatMoudleDelegate>delegate;
 
 @end
 

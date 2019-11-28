@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YMTCloudClassroom'
-  s.version          = '0.1.9'
+  s.version          = '1.1.1.2'
   s.summary          = 'CloudClassroom 2.0 SDK'
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = "溢米辅导 云教师 2.0 SDK"
+  s.description      = '溢米辅导 云教师 2.0 SDK'
 
   s.homepage         = 'https://github.com/yimifudaoTech/YMTCloudClassroom.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   
   s.resources = 'YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/**'
-  s.vendored_frameworks = "YMTCloudClassroom/Framework/YMTCloudClassroom.framework"
-  s.public_header_files = 'YMTCloudClassroom/Framework/YMTCloudClassroom.framework/**/*.h'
+  s.vendored_frameworks = 'YMTCloudClassroom/Framework/YMTCloudClassroom.framework'
+  s.public_header_files = 'YMTCloudClassroom/YMTCloudClassroom.framework/Headers/*.h'
 
   s.static_framework = true
   # s.resource_bundles = {

@@ -32,6 +32,7 @@ typedef NS_ENUM(NSInteger, SocketSenderEventType) {
     SocketSenderEventType_ReportConnectIP,  // 上报连接成功的ip
 };
 typedef void (^SocketSendCallBack)(SocketSenderEventType type, id data);
+typedef void (^SocketSendDataResultCallBack)(BOOL result, id data);
 
 
 typedef void (^SocketDataCallBack)(BOOL finished,NSInteger tag, id data);

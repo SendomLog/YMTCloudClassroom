@@ -9,6 +9,7 @@
 typedef NS_ENUM(NSInteger,DeviceSettingType) {
     DeviceSettingTypeClose = 0,
     DeviceSettingTypeDeviceTest,
+    DeviceSettingTypeTechnicalSupport,
     DeviceSettingTypeExitRoom
 };
 

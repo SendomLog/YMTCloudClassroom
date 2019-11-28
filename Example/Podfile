@@ -18,7 +18,7 @@ target 'YMTCloudClassroom_Example' do
   pod 'YYModel'
   pod 'SDWebImage'
   pod 'Masonry'
-  pod 'YMFlow', :git=>"https://github.com/SendomLog/YMFlow.git"
+  pod 'YMFlow'
   
   target 'YMTCloudClassroom_Tests' do
     inherit! :search_paths

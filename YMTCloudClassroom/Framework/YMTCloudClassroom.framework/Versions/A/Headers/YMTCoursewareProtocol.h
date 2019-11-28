@@ -53,6 +53,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)goPage:(NSInteger)pageIndex;
 
 /**
+ 课件滚动的offSet
+ 
+ @param offset  页面scroll百分比的值
+ */
+- (void)setScrollOffset:(double)offset;
+
+/**
  设置课件数据
 
  @param coursewareData 课件数据

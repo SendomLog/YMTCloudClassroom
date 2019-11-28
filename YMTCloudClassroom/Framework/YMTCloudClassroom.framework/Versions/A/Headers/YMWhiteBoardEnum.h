@@ -34,5 +34,10 @@ typedef NS_ENUM(NSInteger,WhiteBoardCursorViewType) {
     WhiteBoardCursorViewType_BigClass
 };
 
+typedef NS_ENUM(NSInteger,YMDrawImageToolLoadingType) {
+    YMDrawImageToolLoadingTypeLoading, //加载中
+    YMDrawImageToolLoadingTypeFailed, // 加载失败
+    YMDrawImageToolLoadingTypeSuccessfullly // 加载成功
+};
 
 #endif /* YMWhiteBoardEnum_h */

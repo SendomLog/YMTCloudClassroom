@@ -10,6 +10,7 @@
 #import "YMWhiteBoardDelegate.h"
 #import "YMWhiteBoardEnum.h"
 #import "YMDrawTrailModel.h"
+#import "YMDrawTool.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -102,7 +103,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)drawImage:(UIImage *)drawImage pointDic:(NSDictionary *)pointDic groupId:(NSString* __nullable)groupId;
 
-- (void)updateImage:(UIImage *)drawImage itemId:(NSString *)itemId groupId:(NSString* __nullable)groupId;
+- (void)updateImage:(UIImage *)drawImage loadStatus:(NSString *)statusText loading:(BOOL)loading itemId:(NSString *)itemId groupId:(NSString* __nullable)groupId;
 
 /**
  *  撤销

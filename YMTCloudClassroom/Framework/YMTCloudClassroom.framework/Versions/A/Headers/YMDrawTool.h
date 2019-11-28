@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "YMWhiteBoardEnum.h"
+#import "YMTextLayer.h"
 
 #if __has_feature(objc_arc)
 #define ACE_HAS_ARC 1
@@ -33,6 +34,8 @@
 @property (nonatomic, assign) CGFloat lineWidth;
 @property (nonatomic, assign) NSUInteger order_num;
 @property (nonatomic, copy) NSString *itemId;
+@property (nonatomic, assign) CGFloat boardViewWidth;
+@property (nonatomic, assign) CGFloat boardViewHeight;
 
 @optional
 - (void)setInitialPoint:(CGPoint)firstPoint;
@@ -41,6 +44,7 @@
 - (void)setTuoCircleRectX:(CGFloat)rectX rectY:(CGFloat)rectY rectWidth:(CGFloat)rectWidth rectHeight:(CGFloat)rectHeight angle:(CGFloat)angle;
 - (void)draw;
 - (void)drawInContext:(CGContextRef)ctx;
+
 @end
 
 #pragma mark -
@@ -102,6 +106,8 @@
 
 - (CGRect)getCurrentRect;
 
+- (CALayer *)refreshLayer;
+
 @end
 
 
@@ -139,6 +145,10 @@
 @property (nonatomic, assign) CGFloat rectHeight;
 
 @property (nonatomic, strong) CALayer *imageLayer;
+// 图片加载状态以及结果提示图层
+@property (nonatomic, strong) YMTextLayer *textLayer;
+@property (nonatomic, copy) NSString *textLayerString;
+@property (nonatomic, assign)YMDrawImageToolLoadingType loadingType;
 
 - (void)setRectX:(CGFloat)rectX rectY:(CGFloat)rectY rectWidth:(CGFloat)rectWidth rectHeight:(CGFloat)rectHeight;
 

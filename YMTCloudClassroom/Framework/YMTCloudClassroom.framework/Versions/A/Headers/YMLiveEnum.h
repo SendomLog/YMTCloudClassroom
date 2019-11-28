@@ -39,4 +39,9 @@ typedef NS_ENUM(NSUInteger, YMLiveUserType) {
     YMLiveUserTypeGuest,
 };
 
+typedef NS_ENUM(NSInteger, YMLiveRoomType) {
+    YMLiveRoomType1V1,
+    YMLiveRoomType1VN
+};
+
 #endif /* YMLiveEnum_h */

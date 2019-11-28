@@ -14,4 +14,6 @@
 
 @property (nonatomic, strong, readonly) YMLiveFrameView *liveFrameView;
 
+- (instancetype)initWithFrame:(CGRect)frame videoHeight:(CGFloat )videoHeight;
+
 @end

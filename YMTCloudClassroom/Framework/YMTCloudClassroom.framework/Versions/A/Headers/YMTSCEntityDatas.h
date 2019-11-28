@@ -7,6 +7,52 @@
 //
 
 #import "YMTSCServerHeader.h"
+/**
+ 配置对对应的 type 和 key
+ 
+ @return 所有字典
+ */
+static NSDictionary <NSString * ,NSNumber *> * SCCommandTypeAndNameDictionary() {
+    static NSDictionary *_commandDictionary;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _commandDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                              @(YMTSCCommandConvertTypeEnterRoom),         @"enterRoom",
+                              @(YMTSCCommandConvertTypeEnterFailed),       @"enterFailed",
+                              @(YMTSCCommandConvertTypeACK),               @"ack",
+                              @(YMTSCCommandConvertTypeKickOut),           @"kickOut",
+                              @(YMTSCCommandConvertTypeSynFin),            @"synFin",
+                              @(YMTSCCommandConvertTypeUsersStatus),       @"usersStatus",
+                              @(YMTSCCommandConvertTypeExitRoom),          @"exitRoom",
+                              @(YMTSCCommandConvertTypeStartClass),        @"startClass",
+                              @(YMTSCCommandConvertTypeMuteAll),           @"muteAll",
+                              @(YMTSCCommandConvertTypeAuth),              @"auth",
+                              @(YMTSCCommandConvertTypePageContol),        @"page",
+                              @(YMTSCCommandConvertTypePlayAnimation),     @"playAnimation",
+                              @(YMTSCCommandConvertTypeCourseDoc),         @"doc",
+                              @(YMTSCCommandConvertTypeCourseAudio),       @"av",
+                              @(YMTSCCommandConvertTypeTrail),             @"trail",
+                              @(YMTSCCommandConvertTypeCursor),            @"point",
+                              @(YMTSCCommandConvertTypePageZoom),          @"zoom",
+                              @(YMTSCCommandConvertTypeOperation),         @"operation",
+                              @(YMTSCCommandConvertTypeRandomRoll),        @"roll",
+                              @(YMTSCCommandConvertTypeTobeFirstAnswer),   @"responder",
+                              @(YMTSCCommandConvertTypeDoTimer),           @"timer",
+                              @(YMTSCCommandConvertTypeReward),            @"reward",
+                              @(YMTSCCommandConvertTypeFinish),            @"finish",
+                              @(YMTSCCommandConvertTypeRedPackageRain),    @"redPacket",
+                              @(YMTSCCommandConvertTypeRedPackageRainFinsh),@"redPacketFin",
+                              @(YMTSCCommandConvertTypeUpDown),            @"speak",
+                              @(YMTSCCommandConvertTypeQuestion),          @"question",
+                              @(YMTSCCommandConvertTypeAnswerQuestion),    @"answerQuestion",
+                              @(YMTSCCommandConvertTypeDrawShape),         @"draw",
+                              @(YMTSCCommandConvertTypeWindowUpdate),      @"windowUpdate",
+                              @(YMTSCCommandConvertTypeImage),             @"image",
+                              nil];
+    });
+    
+    return _commandDictionary;
+}
 
 //消息模型
 @interface YMTSCSendMsgEntity : NSObject
@@ -18,6 +64,7 @@
 @property(nonatomic, assign) NSInteger mn;
 @property(nonatomic, strong, readonly) NSDictionary *fixDictionary; //解析后的字典
 @property(nonatomic, assign) YMTSCCommandConvertType type;       //消息类型
+@property(nonatomic, strong) NSString *cmd;                       //消息指令
 @property(nonatomic, strong) id content;                            //消息
 @property(nonatomic, assign, readonly) NSInteger userId;            //接受者id
 
