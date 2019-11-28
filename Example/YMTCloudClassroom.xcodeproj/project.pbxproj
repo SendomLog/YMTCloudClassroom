@@ -12,6 +12,7 @@
 		1608D4DE22F924F200B20F3D /* APIjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 1608D4DD22F91F5A00B20F3D /* APIjson.json */; };
 		1608D4E122F9266600B20F3D /* YMTHTTPURLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1608D4E022F9266600B20F3D /* YMTHTTPURLModel.m */; };
 		169F3E5E22FBEDCA00CEB399 /* YMTEnvChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169F3E5D22FBEDCA00CEB399 /* YMTEnvChangeViewController.m */; };
+		2D93A1CF238FFD5700AD033C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D93A1CE238FFD5700AD033C /* AdSupport.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -52,6 +53,7 @@
 		164CB44222F13E4E00679573 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		169F3E5C22FBEDCA00CEB399 /* YMTEnvChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTEnvChangeViewController.h; sourceTree = "<group>"; };
 		169F3E5D22FBEDCA00CEB399 /* YMTEnvChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTEnvChangeViewController.m; sourceTree = "<group>"; };
+		2D93A1CE238FFD5700AD033C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		2FE89B30EA566415F856A076 /* YMTCloudClassroom.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YMTCloudClassroom.podspec; path = ../YMTCloudClassroom.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		55105B653375890499EACFC3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YMTCloudClassroom_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMTCloudClassroom_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				2D93A1CF238FFD5700AD033C /* AdSupport.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				808D75B389733B60566F5B9D /* libPods-YMTCloudClassroom_Example.a in Frameworks */,
@@ -134,6 +137,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D93A1CE238FFD5700AD033C /* AdSupport.framework */,
 				164CB44222F13E4E00679573 /* libc++.tbd */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
@@ -332,8 +336,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YMTCloudClassroom_Example/Pods-YMTCloudClassroom_Example-resources.sh",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/QMUIKit/QMUIKit/QMUIResources/Images.xcassets",
+				"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/QMUIKit/QMUIKit/QMUIResources/QMUIResources.bundle",
 				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/btn_chat_default@2x.png",
 				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/btn_chat_default@3x.png",
 				"${PODS_ROOT}/../../YMTCloudClassroom/Framework/YMTCloudClassroom.framework/Versions/A/Resources/btn_chat_highlight@2x.png",
@@ -578,7 +582,7 @@
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QMUIResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_chat_default@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_chat_default@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/btn_chat_highlight@2x.png",

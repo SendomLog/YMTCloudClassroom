@@ -72,6 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)drawImage:(UIImage *)drawImage pointDic:(NSDictionary *)pointDic groupId:(NSString*)groupId;
 
+
 /**
  *  更新图片
  *
@@ -79,7 +80,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param itemId    唯一标识ID
  @param groupId   分组ID
  */
-- (void)updateImage:(UIImage *)drawImage loadStatus:(NSString *)statusText loading:(BOOL)loading itemId:(NSString *)itemId groupId:(NSString*)groupId;
+- (void)updateImage:(UIImage *)drawImage itemId:(NSString *)itemId groupId:(NSString*)groupId;
+
 
 /**
  *  撤销上一步轨迹

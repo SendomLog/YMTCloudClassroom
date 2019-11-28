@@ -47,6 +47,7 @@ Pod::Spec.new do |s|
   s.dependency 'AgoraRtcEngine_iOS','~> 2.3.0'
   s.dependency 'TXLiteAVSDK_TRTC', '6.3.7088'
   s.dependency 'CocoaAsyncSocket'
+  s.dependency 'Protobuf', '~> 3.7.0'#Protobuf无法更新到3.7.1(3.6.1可以更新)，使用指定资源路径更新
   
   s.user_target_xcconfig = { 
     'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)',

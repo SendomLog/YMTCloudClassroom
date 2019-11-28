@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "YMWhiteBoardEnum.h"
-#import "YMTextLayer.h"
 
 #if __has_feature(objc_arc)
 #define ACE_HAS_ARC 1
@@ -145,10 +144,6 @@
 @property (nonatomic, assign) CGFloat rectHeight;
 
 @property (nonatomic, strong) CALayer *imageLayer;
-// 图片加载状态以及结果提示图层
-@property (nonatomic, strong) YMTextLayer *textLayer;
-@property (nonatomic, copy) NSString *textLayerString;
-@property (nonatomic, assign)YMDrawImageToolLoadingType loadingType;
 
 - (void)setRectX:(CGFloat)rectX rectY:(CGFloat)rectY rectWidth:(CGFloat)rectWidth rectHeight:(CGFloat)rectHeight;
 

@@ -22,7 +22,6 @@ typedef NS_ENUM(NSUInteger, YMDrawEvent) {
 typedef void (^SplitTrailEndBlock)(YMDrawTrailModel *model);
 typedef void (^RectagleStrokeEndBlock)(CGRect rect);
 typedef void (^UpdateGraphBlock)(NSString *itemId, NSDictionary *contentDic);
-typedef void (^ReloadImageBlock)(YMDrawImageTool * model);
 
 @interface YMWhiteBoardView : UIView
 
@@ -41,7 +40,7 @@ typedef void (^ReloadImageBlock)(YMDrawImageTool * model);
 @property (nonatomic, assign) CGPoint currentRatePoint;//比例点
 @property (nonatomic, assign) WhiteBoardCursorViewType cursorType;
 @property (nonatomic, copy) void(^cursorMoved)(CGFloat pointX,CGFloat pointY);
-@property(nonatomic, copy) ReloadImageBlock reloadImageBlock;//重新加载图片回调
+
 /**
  *  手写板事件
  */

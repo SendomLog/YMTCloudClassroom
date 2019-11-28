@@ -62,15 +62,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)deleteGraph:(NSString *)itemId fromBoard:(NSString *)boardId;
 
-/**
- 重新加载图片
- 
- @param url 图片url
- @param itemId 图片id
- @param boardId 板id
- */
-- (void)reloadImage:(UIImage *)drawImage imageUrl:(NSString *)url itemId:(NSString *)itemId fromBoard:(NSString *)boardId;
-
 @end
 
 NS_ASSUME_NONNULL_END
