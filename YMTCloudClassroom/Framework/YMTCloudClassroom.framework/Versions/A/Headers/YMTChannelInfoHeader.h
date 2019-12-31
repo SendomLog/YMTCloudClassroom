@@ -15,13 +15,6 @@ typedef NS_ENUM(NSInteger,YMResponseErrorType){
     YMResponseErrorType_NETWORK,
 };
 
-typedef NS_ENUM(NSInteger,OnlineTalkChannel){
-    OnlineTalkChannel_Agora = 1,
-    OnlineTalkChannel_Tecent,
-    OnlineTalkChannel_NTES,
-    OnlineTalkChannel_TRTC,
-};
-
 
 typedef NS_ENUM(NSInteger, SocketSenderEventType) {
     SocketSenderEventType_Disconnect,       // socket断开连接
@@ -43,11 +36,6 @@ typedef void (^ChannelLessonDataCallBack)(int code, id data, YMResponseErrorType
 typedef void (^ChannelDataOtherCallBack)(int code, id data,id otherData);
 typedef void (^ChannelFail)(int code, NSString * msg);
 typedef void (^ChannelSuccess)(int code, NSString * msg);
-typedef void (^ChannelTypeCallBack)(int code,OnlineTalkChannel type, NSString * msg);
-
-typedef void (^ChannelTypeSuccess)(int code,OnlineTalkChannel type, NSString * msg);
-typedef void (^ChannelTypeFail)(int code,OnlineTalkChannel type, NSString * msg);
-
 typedef void (^PlayerChanged)(NSInteger changed);
 
 #endif /* ChannelInfoHeader_h */

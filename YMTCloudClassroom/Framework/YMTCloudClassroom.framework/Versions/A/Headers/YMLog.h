@@ -35,6 +35,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)printYMlogLevel:(YMLogLevel)logLevel logTag:(NSString *)tag fileName:(const char *)fileName lineNumber:(int)lineNumber funcName:(const char *)funcName logMessage:(NSString *)message;
 
+
+/// 显示应用内控制台
+- (void)showAppTerminal;
 /**
  获取日志文件
  */

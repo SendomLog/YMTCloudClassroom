@@ -46,6 +46,8 @@ typedef NS_ENUM(NSInteger,YMTTopBarType) {
 
 - (void)setupPingIP:(NSString *)pingIP;
 
+- (void)invalidateTimer;
+
 @end
 
 NS_ASSUME_NONNULL_END

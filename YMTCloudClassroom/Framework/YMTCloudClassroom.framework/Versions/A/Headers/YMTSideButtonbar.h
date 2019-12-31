@@ -39,6 +39,8 @@ typedef NS_ENUM(NSUInteger, YMTSideButtonType) {
 
 - (void)handButtonCountDown:(NSInteger)countDownTime;
 
+- (void)setBadgeViewHidden:(BOOL)hidden;
+
 @end
 
 NS_ASSUME_NONNULL_END

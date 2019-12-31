@@ -77,45 +77,53 @@ typedef NS_ENUM(NSInteger,GPLSCServerConnectResult) {
 
 @end
 
-typedef void (^YMTIMModuleCallBlock)(void);
-
-typedef NSArray<YMTSCServerIpModel *> * (^GPLSCServerIPsConfigBlock)(void);
-
 @interface YMTIMModule : NSObject
 
 @property(nonatomic, weak) id<YMTIMModuleDelegate> delegate;
 
+
+/// 初始化IM模块
+/// @param lessonId 课程ID
+/// @param mainIP 主IP
+/// @param dnsIPs 备选IP列表
+/// @param token 用来做用户校验
 - (instancetype)initWithLessonId:(NSString *)lessonId
                           mainIP:(YMTSCServerIpModel *)mainIP
                           dnsIPs:(NSArray<YMTSCServerIpModel *> *)dnsIPs
                            token:(NSString *)token;
 
+
+/// 初始化IM模块
+/// @param lessonId  课程ID
+/// @param uid 用户ID
+/// @param mainIP 主IP
+/// @param dnsIPs 备选IP列表
+/// @param token 用来做用户校验
 - (instancetype)initWithLessonId:(NSString *)lessonId
                              uid:(NSString *)uid
                           mainIP:(YMTSCServerIpModel *)mainIP
                           dnsIPs:(NSArray<YMTSCServerIpModel *> *)dnsIPs
                            token:(NSString *)token;
 
-/**
- 同步消息
- */
-- (void)asyncSeverDataWithComplete:(void (^)(BOOL isSuccess))completionBlock;
-;
 
-/**
- 重置教室所有工具及设置
- */
-- (void)resetClassRoomToolWithEndConnect:(BOOL)isEndConnect;
+/// 同步历史消息
+/// @param completionBlock 历史消息同步回调
+- (void)asyncHistoryDataWithComplete:(void (^)(BOOL isSuccess))completionBlock;
 
-/**
- 发送消息至server
- 
- @param sendContext 发送的消息
- */
-- (void)sendSocketContext:(NSDictionary *)sendContext type:(YMTSCCommandConvertType)type;
 
-- (void)stopTimeOut;
-- (void)startTimeOut:(YMTIMModuleCallBlock)callBack;
+/// 重置连接，会清空发送和接收缓存数据
+/// @param isEndConnect  是否结束连接标志位
+- (void)resetConnect:(BOOL)isEndConnect;
+
+
+/// 发送指令
+/// @param commandContent 指令内容
+/// @param type 指令类别
+- (void)sendCommand:(NSDictionary *)commandContent type:(YMTSCCommandConvertType)type;
+
+/// 断开连接
 - (void)disconnect;
+
+/// 获取当前IP
 - (NSString *)getCurrentIp;
 @end

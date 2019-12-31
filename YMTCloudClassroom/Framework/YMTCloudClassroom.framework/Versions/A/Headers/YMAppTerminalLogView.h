@@ -12,8 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YMAppTerminalLogView : UIView
 
++ (instancetype)shareView;
+
 // 显示
 - (void)showAppTerminalLogView;
+
+- (void)printLog:(NSString *)log;
 
 @end
 

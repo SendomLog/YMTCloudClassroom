@@ -33,7 +33,6 @@
  插入一条数据
 
  @param context 某条数据
- @param needRemember 是否需要记录
  */
 - (void)insertCacheWithContext:(NSData *)context isRealTime:(BOOL)isRealTime;
 

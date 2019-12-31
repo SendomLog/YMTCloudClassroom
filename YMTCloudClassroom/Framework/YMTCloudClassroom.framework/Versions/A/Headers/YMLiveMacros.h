@@ -9,8 +9,6 @@
 #ifndef YMLiveMacros_h
 #define YMLiveMacros_h
 
-#import "YMLogUtil.h"
-
 /** 弱引用 */
 #define YMLive_WEAKSELF __weak typeof(self)weakSelf = self;
 #define YMLive_STRONGSELF __strong typeof(weakSelf)self = weakSelf;

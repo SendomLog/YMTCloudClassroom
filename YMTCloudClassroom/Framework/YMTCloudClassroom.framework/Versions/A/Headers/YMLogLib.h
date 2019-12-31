@@ -15,6 +15,6 @@ FOUNDATION_EXPORT double YMLogLibVersionNumber;
 FOUNDATION_EXPORT const unsigned char YMLogLibVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <YMLogLib/PublicHeader.h>
-#import <YMLogLib/YMLog.h>
-#import <YMLogLib/YMLogUtil.h>
-#import <YMLogLib/YMAppTerminalLogView.h>
+#import "YMLogLib.h"
+#import "YMLogUtil.h"
+#import "YMAppTerminalLogView.h"
