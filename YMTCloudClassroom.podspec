@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YMTCloudClassroom'
-  s.version          = '1.2.0.1'
+  s.version          = '1.2.1.10'
   s.summary          = 'CloudClassroom 2.0 SDK'
 
 # This description is used to generate tags and improve search results.
